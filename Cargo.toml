@@ -1,0 +1,20 @@
+[package]
+name = "rsx-layout"
+version = "0.1.0"
+authors = ["Victor Porof <victor.porof@gmail.com>"]
+
+[lib]
+name = "rsx_layout"
+
+[dependencies]
+rsx-shared = { git = "https://github.com/victorporof/rsx-shared.git", default-features = false }
+serde = "1.0.27"
+serde_derive = "1.0.27"
+yoga = { git = "https://github.com/victorporof/yoga-rs.git", branch = "self-tokenize" }
+
+[dev-dependencies]
+rsx = { git = "https://github.com/victorporof/rsx.git", default-features = false }
+rsx-dom = { git = "https://github.com/victorporof/rsx-dom.git", default-features = false, features = ["hashmap-arena"] }
+rsx-resources = { git = "https://github.com/victorporof/rsx-resources.git", default-features = false, features = ["link-freetype"] }
+rsx-shared = { git = "https://github.com/victorporof/rsx-shared.git", default-features = false, features = ["impl-dummy"] }
+rsx-stylesheet = { git = "https://github.com/victorporof/rsx-stylesheet.git", default-features = false }
